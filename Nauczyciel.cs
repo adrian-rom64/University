@@ -8,7 +8,7 @@ namespace Uni
     {
         private StopienWyksztalcenia Stopien;
 
-        public Nauczyciel(string Imie, string Nazwisko, StopienWyksztalcenia Stopien) : base(Imie, Nazwisko)
+        public Nauczyciel(string ImieNazwisko, StopienWyksztalcenia Stopien) : base(ImieNazwisko)
         {
             this.Stopien = Stopien;
         }

@@ -12,7 +12,7 @@ namespace Uni
         private bool JestAbsolwentem;
         private string Stopien;
 
-        public Student(string Imie, string Nazwisko) : base(Imie, Nazwisko)
+        public Student(string ImieNazwisko) : base(ImieNazwisko)
         {
             this.NumerIndeksu = IloscStudentow + 10001;
             IloscStudentow += 1;
