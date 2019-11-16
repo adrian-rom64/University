@@ -2,11 +2,19 @@
 
 namespace Uni
 {
+    enum StopienWyksztalcenia
+    {
+        Inzynier,
+        Magister,
+        Doktor,
+        Profesor
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var test = new Student("Adrian", "Romanowski");
+            Console.WriteLine(test);
         }
     }
 }
