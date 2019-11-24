@@ -11,7 +11,7 @@ namespace Uni
         private bool JestZatrudniony;
         private Decimal Pensja;
 
-        public Pracownik(string ImieNazwisko) : base(ImieNazwisko)
+        public Pracownik(string Imie, string Nazwisko) : base(Imie, Nazwisko)
         {
             this.JestZatrudniony = false;
         }

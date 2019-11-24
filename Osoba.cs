@@ -13,10 +13,10 @@ namespace Uni
         protected int NumerTelefonu;
         protected string Email;
 
-        protected Osoba(string ImieNazwisko)
+        protected Osoba(string Imie, string Nazwisko)
         {
-            this.Imie = ImieNazwisko.Split(" ")[0];
-            this.Nazwisko = ImieNazwisko.Split(" ")[1];
+            this.Imie = Imie;
+            this.Nazwisko = Nazwisko;
         }
         public void UzupelnijDane(ulong PESEL, string DataUrodzenia, int NumerTelefonu, string Email)
         {

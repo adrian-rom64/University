@@ -10,9 +10,9 @@ namespace Uni
         private int NumerIndeksu;
         private float Srednia;
         private bool JestAbsolwentem;
-        private string Stopien;
+        private StopienWyksztalcenia Stopien;
 
-        public Student(string ImieNazwisko) : base(ImieNazwisko)
+        public Student(string Imie, string Nazwisko) : base(Imie, Nazwisko)
         {
             this.NumerIndeksu = IloscStudentow + 10001;
             IloscStudentow += 1;
