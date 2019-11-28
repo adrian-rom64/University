@@ -10,6 +10,7 @@ namespace Uni
         private int NumerIndeksu;
         private float Srednia;
         private bool JestAbsolwentem;
+        public Kierunek kierunek;
         private StopienWyksztalcenia Stopien;
 
         public Student(string Imie, string Nazwisko) : base(Imie, Nazwisko)

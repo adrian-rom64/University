@@ -14,15 +14,20 @@ namespace Uni
     {
         static void Main(string[] args)
         {
+            // Scenariusz 1 - nowy student
             var student = new Student("Adrian", "Romanowski");
-            var pracownik = new Pracownik("Maciek", "Kowalski");
-            var nauczyciel = new Nauczyciel("Marlena", "Nowak", StopienWyksztalcenia.Magister);
-            student.UzupelnijDane(96052702991, "1996-05-27", 456123965, "adrian@rom.com");
-            pracownik.UzupelnijDane(78102378432, "1978-10-23", 438657432, "maciek@kow.com");
-            nauczyciel.UzupelnijDane(86111198345, "1986-11-11", 761230564, "marlena@now.com");
+            var dziekan = new Nauczyciel("Henryk", "Drzewo", StopienWyksztalcenia.Profesor);
+            var wydzialInformatyki = new Wydzial("Wydzial Informatyki", dziekan);
+            wydzialInformatyki.dziekanat = new Dziekanat(8,16, wydzialInformatyki);
+            var kierunek = new Kierunek("Informatyka");
+            wydzialInformatyki.DodajNowyKierunek(kierunek);
+            kierunek.DodajKursy(new Kurs("Matematyka dyskretna"), new Kurs("Bazy Danych"));
+            wydzialInformatyki.dziekanat.DodajStudenta(student, kierunek);
+            Console.WriteLine(student);
+            student.UzupelnijDane(96052702881, "1996-01-02", 639471493, "adrian@gmail.com");
             Console.WriteLine(student.PobierzDane());
-            Console.WriteLine(nauczyciel.PobierzDane());
-            Console.WriteLine(pracownik.PobierzDane());
+            wydzialInformatyki.dziekanat.MigracjaDanych();
+
         }
     }
 }
