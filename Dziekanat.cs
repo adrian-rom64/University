@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Uni
 {
-	class Dziekanat
+	class Dziekanat : IAddress
 	{
 		public int OtwarteOd;
 		public int OtwarteDo;
@@ -36,6 +36,10 @@ namespace Uni
 				System.Threading.Thread.Sleep(100);
 			}
 			Console.Write("\b\bOK]\n");
+		}
+		public void PrintAddress()
+		{
+			Console.WriteLine(this.wydzial.Address);
 		}
 	}
 }

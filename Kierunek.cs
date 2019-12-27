@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Uni
 {
-	class Kierunek
+	class Kierunek : IECTS
 	{
 		public string Nazwa;
 		public int IleStudentow;
@@ -22,6 +22,10 @@ namespace Uni
 				Kursy.Add(item);
 				Console.WriteLine($"Na kierunku {this.Nazwa} dodano nowy kurs - {item.Nazwa}");
 			}
+		}
+		public void getECTS()
+		{
+			Console.WriteLine("Liczba punktow ECTS do zaliczenia");
 		}
 	}
 }

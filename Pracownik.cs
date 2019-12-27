@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Uni
 {
-    class Pracownik : Osoba
+    class Pracownik : Osoba, IPayable
     {
         private string Stanowisko;
         private Pracownik Przelozony;
@@ -25,6 +25,10 @@ namespace Uni
         public void Zwolnij()
         {
             this.JestZatrudniony = false;
+        }
+        public void Pay(Decimal salary)
+        {
+            Console.WriteLine($"{base.ToString()} otrzymal {salary}");
         }
     }
 }

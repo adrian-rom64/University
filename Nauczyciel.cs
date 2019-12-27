@@ -12,6 +12,5 @@ namespace Uni
         {
             this.Stopien = Stopien;
         }
-
     }
 }
