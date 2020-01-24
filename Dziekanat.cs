@@ -22,6 +22,10 @@ namespace Uni
 			this.wydzial.Studenci.Add(student);
 			Console.WriteLine($"Dziekanat na {this.wydzial.Nazwa} dodal nowego studenta na kierunku {student.kierunek.Nazwa}");
 		}
+		public void ZaliczSemestr(Student s)
+		{
+			Console.WriteLine($"{s} Zaliczyl semestr");
+		}
 		public void MigracjaDanych()
 		{
 			string animation = "|/-\\";

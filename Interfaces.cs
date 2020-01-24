@@ -2,6 +2,13 @@ using System;
 
 namespace Uni
 {
+	enum StopienWyksztalcenia
+    {
+        Inzynier,
+        Magister,
+        Doktor,
+        Profesor
+    }
 	interface IAddress
 	{
 		void PrintAddress();

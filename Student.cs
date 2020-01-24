@@ -18,5 +18,11 @@ namespace Uni
             this.NumerIndeksu = IloscStudentow + 10001;
             IloscStudentow += 1;
         }
+        public void SkonczStudia()
+        {
+            Stopien = StopienWyksztalcenia.Magister;
+            JestAbsolwentem = true;
+            Console.WriteLine("Student skonczyl studia");
+        }
     }
 }

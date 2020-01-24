@@ -21,10 +21,12 @@ namespace Uni
             this.Pensja = new decimal(Pensja);
             this.Przelozony = Przelozony;
             this.JestZatrudniony = true;
+            Console.WriteLine($"Pracownik {this} zatrudniony");
         }
         public void Zwolnij()
         {
             this.JestZatrudniony = false;
+            Console.WriteLine($"Pracownik {this} zwolniony");
         }
         public void Pay(Decimal salary)
         {
